@@ -1,0 +1,110 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+  max-width: 90vw;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(203, 192, 192);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cell:hover{
+  background-color: rgb(225, 160, 160);
+  
+}
+
+.game-form {
+  background-color: #f7f7f7;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80px;
+}
+
+input[type="number"]:focus {
+  border: none;
+  border-color: #28a745;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 17px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+@media only screen and (max-width: 600px) {
+  .game-form {
+    padding: 10px 15px;
+  }
+
+  input[type="number"] {
+    width: 60px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
